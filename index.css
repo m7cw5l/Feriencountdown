@@ -1,0 +1,65 @@
+@font-face {
+	font-family: 'Share Tech Mono';
+	src: url(fonts/sharetechmono-regular.ttf) format("truetype"),
+	url(fonts/sharetechmono-regular.svg) format("svg"),
+	url(fonts/sharetechmono-regular.woff) format("woff"),
+	url(fonts/sharetechmono-regular.woff2) format("woff2");
+	font-weight: normal;
+	font-style: monospace;
+	font-display: swap;
+}
+
+html, body, .container {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Share Tech Mono', monospace;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.time-container {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 12px;
+}
+
+.time-item {
+	margin: 2px;
+	text-align: center;
+}
+
+.time {
+	float: left;
+	clear: left;
+	font-size: 3em;
+}
+
+.time-description {
+	width: 100%;
+	float: left;
+	clear: left;
+	font-size: 0.7em;
+}
+
+.description {
+	font-size: 1.2em;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #000000;
+		color: #FFFFFF;
+	}
+}
